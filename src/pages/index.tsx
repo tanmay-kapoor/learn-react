@@ -2,10 +2,29 @@
 // import Image from 'next/image'
 // import { Inter } from 'next/font/google'
 // import styles from '@/styles/Home.module.css'
-import Profile from './components/profile'
+
+import Profile from "./components/profile";
+import ProfileMistake from "./qcomps/profile_mistake";
+import MyFirstComp from "./qcomps/firstcomp";
+import Bio from "./qcomps/bios";
+import TodoList from "./qcomps/todos";
+import ProfileProps from "./components/profile_props";
+import GalleryProps from "./qcomps/gallery_props";
+import PackingList from "./qcomps/props_item";
+import RecipeList from "./qcomps/recipes";
 
 export default function Home() {
   return (
-    <Profile />
-  )
+    <>
+      <Profile />
+      <ProfileMistake />
+      <MyFirstComp />
+      <Bio />
+      <TodoList />
+      <ProfileProps />
+      <GalleryProps />
+      <PackingList />
+      <RecipeList />
+    </>
+  );
 }
