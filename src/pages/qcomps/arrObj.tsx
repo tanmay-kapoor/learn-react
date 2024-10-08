@@ -9,7 +9,7 @@ const initialList = [
 ];
 
 export default function BucketList() {
-  const [myList, setMyList] = useState(initialList);
+  const [myList, setMyList] = useState(structuredClone(initialList));
   const [yourList, setYourList] = useState(structuredClone(initialList));
 
   function handleToggleMyList(artworkId: number, nextSeen: boolean) {
