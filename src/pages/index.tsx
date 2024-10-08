@@ -11,11 +11,17 @@
 // import ProfileProps from "./components/profile_props";
 // import GalleryProps from "./qcomps/gallery_props";
 // import PackingList from "./qcomps/props_item";
-import RecipeList from "./qcomps/recipes";
-import List from "./qcomps/list_keys_id";
-import Gallery from "./qcomps/state";
-import Form from "./qcomps/stuckForm";
-import FeedbackForm from "./qcomps/thankYouCrash";
+
+// import RecipeList from "./qcomps/recipes";
+// import List from "./qcomps/list_keys_id";
+// import Gallery from "./qcomps/state";
+// import Form from "./qcomps/stuckForm";
+// import FeedbackForm from "./qcomps/thankYouCrash";
+
+import RequestTracker from "./qcomps/shoppingCart";
+import Scoreboard from "./qcomps/updObjectsForm";
+import List from "./qcomps/artistsRemoveArr";
+import BucketList from "./qcomps/arrObj";
 
 export default function Home() {
   return (
@@ -28,11 +34,17 @@ export default function Home() {
       <ProfileProps />
       <GalleryProps />
       <PackingList /> */}
-      <RecipeList />
+
+      {/* <RecipeList />
       <List />
       <Gallery />
       <Form />
-      <FeedbackForm />
+      <FeedbackForm /> */}
+
+      <RequestTracker />
+      <Scoreboard />
+      <List />
+      <BucketList />
     </>
   );
 }
